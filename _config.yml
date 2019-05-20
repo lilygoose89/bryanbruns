@@ -1,7 +1,24 @@
+site: Bryan Bruns
+
+url: "https://bryanbruns.com" # the base hostname & protocol for your site
+
 collections:
   posts:
     output: true
     permalink: /:collection/:name
 
-gems:
-  - jekyll-archives
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Bryan Bruns, Consulting Sociologist
+author:
+  name: Bryan Bruns
+  email:
+  twitter:
+social:
+  name: Bryan Bruns
+  links:
+    - bryanbruns.com
