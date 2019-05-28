@@ -1,8 +1,190 @@
 ---
-layout: default
 title:
 description:
 keywords:
 image:
 og-image:
+clients:
+  - name: Ford Foundation
+    logo: /images/logos/fordfoundation.png
+  - name: World Bank
+    logo: /images/logos/worldbank.png
+  - name: International Water Management Institute,
+    logo: /images/logos/iwmi.png
+  - name: International Food Policy Research Institute
+    logo: /images/logos/ifpri.png
+  - name: United States Agency for International Development
+    logo: /images/logos/usaid.png
+  - name: Asian Development Bank
+    logo: /images/logos/adb.png
+  - name: World Wildlife Fund
+    logo: /images/logos/wwf.png
+  - name: CARE
+    logo: /images/logos/care.png
+  - name: Oxfam-America
+    logo: /images/logos/oxfam.png
+  - name: United Nations Agencies
+    logo: /images/logos/un.png
+education:
+  - name: Cornell University
+    logo: /images/logos/cornell.png
+    description: 'Ph.D. Sociology of Development, Cornell University.<br />Minor Fields: Agricultural Economics, Southeast Asian Studies<br /><br />M.S. Sociology of Development, Cornell University.'
+  - name: Beloit College
+    logo: /images/logos/beloit.png
+    description: B.A. Major in Anthropology, Beloit College.
+fellowships:
+  - name: Fulbright
+    logo: /images/logos/fulbright.png
+    description: Fulbright Research Award. Thailand. 1985-1986.
+  - name: International Association for Public Participation
+    logo: /images/logos/iap2.png
+    description: Certificate in Public Participation. International Association for Public Participation. 2003.
+  - name: Indiana University Bloomington
+    logo: /images/logos/iu.png
+    description: Visiting Scholar, Workshop in Political Theory and Policy Analysis, Indiana University Bloomington. 2009-2010.
+memberships:
+  - name: Ford Foundation
+    logo: /images/logos/fordfoundation.png
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+publications:
+  - title: 'Water Rights Reform: Lessons for Institutional Design'
+    description: >-
+      Edited by Bryan Bruns, Claudia Ringler, and Ruth Meinzen-Dick. Washington, D.C.: International Food Policy Research Institute. 2005.
+    bookcover:
+  - title: Negotiating Water Rights.
+    description: >-
+      Edited by Bryan Bruns and Ruth Meinzen-Dick. London: Intermediate Technology Publications. New Delhi: Vistaar. 2000.
+    bookcover:
+layout: default
 ---
+<header class="grid-middle bg-solid">
+  <div class="col-6 pad-all-s">
+    <h1>Bryan Randolph Bruns</h1>
+    <h2>Freelance Consulting Sociologist</h2>
+    <p>
+      Improving participation in irrigation, water resources management, and institutional development.
+    </p>
+    <button class="button-light">Download CV</button>
+    <button class="button-light">Connect in LinkedIn</button>
+    <p>
+      Please scroll for more.
+    </p>
+  </div>
+  <div class="col-6 pad-all-s hero-image">
+  </div>
+</header>
+<section class="section-padding">
+  <h2>Skills</h2>
+  <div class="editable">
+    <ul>
+      <li>
+        Plan and facilitate public participation.
+      </li>
+      <li>
+        Water user association development.
+      </li>
+      <li>
+        Institutional analysis and design.
+      </li>
+      <li>
+        Social assessment and research: rapid appraisal, case studies, surveys, and action research.
+      </li>
+      <li>
+        Project preparation, implementation, and review: proposal drafting, team leadership, project management, supervision, monitoring and evaluation.
+      </li>
+      <li>
+        Report writing, technical editing, conference proceedings and book editing, peer review.
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="bg-pale section-padding">
+  <h2>Countries of Expertise</h2>
+  <p>
+    I have professional experience setting up and managing projects in Thailand, Indonesia, Vietnam, Laos, Cambodia, Philippines, Bangladesh, Sri Lanka, Nepal, China, Tajikistan, Yemen, Egypt, Nigeria, Malawi, and Ghana.
+  </p>
+  <img src="/images/bryanbrunsmap.png" alt="world map"/>
+</section>
+<section class="section-padding">
+  <h2>Clients</h2>
+  <p>
+    Among my clients are governments and non-government agencies including the Ford Foundation, World Bank, International Water Management Institute, International Food Policy Research Institute, United States Agency for International Development, Asian Development Bank, World Wildlife Fund, CARE, Oxfam-America, and United Nations agencies.
+  </p>
+  <div class="text-center grid-middle-spaceAround">
+    {% for clients in page.clients %}
+    <div class="col-2_md-3_sm-4">
+      <img class="client-logos" src="{{clients.logo}}"/ alt="{{clients.name}} logo" />
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<section class="bg-pale section-padding">
+  <h2>Education</h2>
+  {% for education in page.education %}
+  <img class="logos" src="{{education.logo}}"/ alt="{{education.name}} logo">
+  <p>
+    {{education.description}}
+  </p>
+  {% endfor %}
+</section>
+<section class="section-padding">
+  <h2>Training & Fellowships</h2>
+  {% for fellowships in page.fellowships %}
+  <img class="logos" src="{{fellowships.logo}}"/ alt="{{fellowships.name}} logo">
+  <p>
+    {{fellowships.description}}
+  </p>
+  {% endfor %}
+</section>
+<section class="bg-pale section-padding">
+  <h2>Professional Memberships</h2>
+  {% for memberships in page.memberships %}
+  <img class="logos" src="{{memberships.logo}}"/ alt="{{memberships.name}} logo">
+  <p>
+    {{memberships.description}}
+  </p>
+  {% endfor %}
+</section>
+<section class="section-padding">
+  <h2>Selected Publications</h2>
+  {% for publications in page.publications %}
+  <div class="grid-spaceBetween">
+    <div class="col-6">
+      <h3>{{publications.title}}</h3>
+      <p>
+        {{publications.description}}
+      </p>
+    </div>
+    <div class="col-3">
+      <img class="bookcover" src="{{publications.bookcover}}"/ alt="{{publications.title}} book cover">
+    </div>
+  </div>
+  {% endfor %}
+  <button class="button-dark">See More on Google Scholar</button>
+</section>
+<section id="contact" class="section-padding bg-solid">
+  <h2>Contact</h2>
+  <form method="POST" action="https://formspree.io/lily@cnxweb.site" class="grid-spaceBetween">
+    <input type="hidden" name="_next" value="/" />
+    <input type="hidden" name="_language" value="en" />
+      <div class="form-group col-12">
+          <label class="form-label" for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+      </div>
+      <div class="form-group col-12">
+          <label class="form-label" for="email">Your Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+      </div>
+      <div class="form-group col-12">
+          <label class="form-label" for="subject">Subject</label>
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+      </div>
+      <div class="form-group col-12">
+          <label class="form-label" for="message">Message</label>
+          <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>
+      </div>
+      <div class="text-center col-12">
+        <button type="submit" class="button-light" style="width: 100%;">Send Message</button>
+      </div>
+  </form>
+</section>

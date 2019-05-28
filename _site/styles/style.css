@@ -1,6 +1,7 @@
 /* universal styles ----------------------------------------- */
 * {
   box-sizing: border-box;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 img {
   max-width: 100%;
@@ -13,7 +14,9 @@ img {
   margin: 0;
   padding: 0;
 }
-
+.section-padding {
+  padding: 2% 15%;
+}
 @media all and (max-width:1024px) {
 
 }
@@ -25,6 +28,16 @@ img {
 }
 
 /* typography ----------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Merriweather', serif;
+}
+p {
+  line-height: 1.2em;
+}
+li {
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
 .text-center {
   text-align: center;
 }
@@ -37,10 +50,67 @@ img {
   }
 }
 /* link and button styles ----------------------------------------- */
-
+a {
+  color: rgb(66, 66, 66);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+a:hover {
+  color: rgba(66, 66, 66, 0.8);
+  text-decoration: underline;
+}
+.light-link {
+  color: white;
+}
+.light-link:hover {
+  color: rgba(201, 201, 201, 0.8);
+  text-decoration: underline;
+}
+button {
+  margin: 0;
+  padding: .16000000000000003rem 1.12rem;
+  height: 3.36rem;
+  border: none;
+  border-bottom: .3rem solid transparent;
+  border-radius: .2rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.button-light {
+  background-color: rgb(255, 255, 255);
+  border-bottom-color: rgba(201, 201, 201, 0.8);
+}
+.button-dark {
+  background-color: rgb(130, 174, 177);
+  border-bottom-color: rgb(102, 133, 134);
+  color: #424242;
+}
+.button-light:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom-color: rgb(201, 201, 201);
+}
+.button-dark:hover {
+  background-color: rgba(130, 174, 177, 0.8);
+  border-bottom-color: rgba(102, 133, 134, 0.8);
+}
 /* container styles ----------------------------------------- */
-
+.bg-grey {
+  background-color: grey;
+}
+.bg-lightgrey {
+  background-color: lightgrey;
+}
+.bg-solid {
+  background-color: #668586;
+}
+.bg-pale {
+  background-color: rgba(130, 174, 177, 0.2);
+}
 /* header and nav styles ----------------------------------------- */
+
 
 /*  MOBILE MENU */
 #mobile-menu {
@@ -78,12 +148,58 @@ img {
   -webkit-font-smoothing: antialiased;
 }
 /* footer styles ----------------------------------------- */
-
+footer {
+  background-color: #424242;
+  color: white;
+  text-align: center;
+}
 /* homepage styles ----------------------------------------- */
+.hero {
 
+}
+.hero-image {
+  height: 100vh;
+  background-image: url('/images/man.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: hidden;
+}
+.client-logos {
+  min-height: 30px;
+  max-height: 50px;
+  width: auto;
+  margin: 2% 0;
+}
+.logos {
+  min-height: 50px;
+  max-height: 70px;
+  width: auto;
+}
 /* post styles ----------------------------------------- */
 
 /* form styles ----------------------------------------- */
+input,textarea,select {
+  background: rgba(255,255,255,.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  margin-bottom: 30px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:focus,textarea:focus {
+  background: white;
+}
+.form-label{
+  line-height: 2em;
+}
 
 /* helpers ----------------------------------------- */
 @media all and (max-width:768px) {
