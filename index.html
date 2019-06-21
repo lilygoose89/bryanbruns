@@ -50,15 +50,15 @@ publications:
   - title: 'Water Rights Reform: Lessons for Institutional Design'
     description: >-
       Edited by Bryan Bruns, Claudia Ringler, and Ruth Meinzen-Dick. Washington, D.C.: International Food Policy Research Institute. 2005.
-    bookcover:
+    bookcover: /images/bookcovers/wwr_cover.png
   - title: Negotiating Water Rights.
     description: >-
       Edited by Bryan Bruns and Ruth Meinzen-Dick. London: Intermediate Technology Publications. New Delhi: Vistaar. 2000.
-    bookcover:
+    bookcover: /images/bookcovers/nwr_cover.jpg
 layout: default
 ---
-<header class="grid-middle bg-solid">
-  <div class="col-6 pad-all-s">
+<header class="grid-middle bg-solid hero-padding">
+  <div class="col-6_md-12 pad-all-s">
     <h1>Bryan Randolph Bruns</h1>
     <h2>Freelance Consulting Sociologist</h2>
     <p>
@@ -70,7 +70,7 @@ layout: default
       Please scroll for more.
     </p>
   </div>
-  <div class="col-6 pad-all-s hero-image">
+  <div class="col-6 pad-all-s hero-image hide-small-screen">
   </div>
 </header>
 <section class="section-padding">
@@ -103,7 +103,7 @@ layout: default
   <p>
     I have professional experience setting up and managing projects in Thailand, Indonesia, Vietnam, Laos, Cambodia, Philippines, Bangladesh, Sri Lanka, Nepal, China, Tajikistan, Yemen, Egypt, Nigeria, Malawi, and Ghana.
   </p>
-  <img src="/images/bryanbrunsmap.png" alt="world map"/>
+  <img class="hide-mobile" src="/images/bryanbrunsmap.png" alt="world map"/>
 </section>
 <section class="section-padding">
   <h2>Clients</h2>
@@ -148,14 +148,14 @@ layout: default
 <section class="section-padding">
   <h2>Selected Publications</h2>
   {% for publications in page.publications %}
-  <div class="grid-spaceBetween">
-    <div class="col-6">
+  <div class="grid-spaceBetween pad-bottom-m">
+    <div class="col-6_sm-12 align-top">
       <h3>{{publications.title}}</h3>
       <p>
         {{publications.description}}
       </p>
     </div>
-    <div class="col-3">
+    <div class="col-3_sm-12">
       <img class="bookcover" src="{{publications.bookcover}}"/ alt="{{publications.title}} book cover">
     </div>
   </div>

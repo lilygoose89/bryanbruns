@@ -14,8 +14,11 @@ img {
   margin: 0;
   padding: 0;
 }
+[class*=col-], [class*=col_], [class~=col] {
+  padding: 0;
+}
 .section-padding {
-  padding: 2% 15%;
+  padding: 5% 15%;
 }
 @media all and (max-width:1024px) {
 
@@ -33,6 +36,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
   line-height: 1.2em;
+  padding-bottom: 1em;
 }
 li {
   line-height: 1.2em;
@@ -154,12 +158,17 @@ footer {
   text-align: center;
 }
 /* homepage styles ----------------------------------------- */
-.hero {
+.hero-padding {
 
+}
+@media all and (max-width:1024px) {
+  .hero-padding {
+    padding: 5% 10%;
+  }
 }
 .hero-image {
   height: 100vh;
-  background-image: url('/images/man.jpg');
+  background-image: url('/images/bryanbruns1.JPG');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -169,12 +178,30 @@ footer {
   min-height: 30px;
   max-height: 50px;
   width: auto;
-  margin: 2% 0;
+  margin: 5% 0;
 }
 .logos {
   min-height: 50px;
   max-height: 70px;
   width: auto;
+}
+.bookcover {
+  max-height: auto;
+  width: 140px;
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+@media all and (max-width:768px) {
+  .bookcover {
+    width: 280px;
+  }
+  .client-logos {
+    padding: 3%;
+  }
+}
+@media all and (max-width:576px) {
+
 }
 /* post styles ----------------------------------------- */
 
@@ -202,6 +229,11 @@ input:focus,textarea:focus {
 }
 
 /* helpers ----------------------------------------- */
+@media all and (max-width:1024px) {
+  .hide-small-screen {
+    display: none;
+  }
+}
 @media all and (max-width:768px) {
   .text-center-mobile {
   text-align: center;
