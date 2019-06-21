@@ -1,8 +1,9 @@
 ---
-title:
-description:
+title: Bryan Randolph Bruns
+description: Freelance Consulting Sociologist
 keywords:
 headshot: /images/bryanbruns1.jpg
+cv: /bryanbruns-cv.pdf
 og-image: /images/bryanbrunsdotcompreview.png
 clients:
   - name: Ford Foundation
@@ -59,18 +60,18 @@ layout: default
 ---
 <header class="grid-middle bg-solid hero-padding">
   <div class="col-6_md-12 pad-all-s">
-    <h1>Bryan Randolph Bruns</h1>
-    <h2>Freelance Consulting Sociologist</h2>
-    <p>
+    <h1>{{page.title}}</h1>
+    <h2>{{page.description}}</h2>
+    <p class="editable">
       Improving participation in irrigation, water resources management, and institutional development.
     </p>
-    <button class="button-light">Download CV</button>
-    <button class="button-light">Connect in LinkedIn</button>
+    <a href="{{page.cv}}" target="blank"><button class="button-light">Download CV</button></a>
+    <a href="https://www.linkedin.com/in/bryanbruns" target="blank"><button class="button-light">Connect on LinkedIn</button></a>
     <p>
       Please scroll for more.
     </p>
   </div>
-  <div class="col-6 pad-all-s hero-image hide-small-screen" style="background-image: url('{page.headshot}');">
+  <div class="col-6 pad-all-s hero-image hide-small-screen" style="background-image: url('{{page.headshot}}');">
   </div>
 </header>
 <section class="section-padding">
@@ -100,14 +101,14 @@ layout: default
 </section>
 <section class="bg-pale section-padding">
   <h2>Countries of Expertise</h2>
-  <p>
+  <p class="editable">
     I have professional experience setting up and managing projects in Thailand, Indonesia, Vietnam, Laos, Cambodia, Philippines, Bangladesh, Sri Lanka, Nepal, China, Tajikistan, Yemen, Egypt, Nigeria, Malawi, and Ghana.
   </p>
   <img class="hide-mobile" src="/images/bryanbrunsmap.png" alt="world map"/>
 </section>
 <section class="section-padding">
   <h2>Clients</h2>
-  <p>
+  <p class="editable">
     Among my clients are governments and non-government agencies including the Ford Foundation, World Bank, International Water Management Institute, International Food Policy Research Institute, United States Agency for International Development, Asian Development Bank, World Wildlife Fund, CARE, Oxfam-America, and United Nations agencies.
   </p>
   <div class="text-center grid-middle-spaceAround">
