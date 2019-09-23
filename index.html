@@ -7,45 +7,45 @@ cv: /bryanbruns-cv.pdf
 og-image: /images/bryanbrunsdotcompreview.png
 clients:
   - name: Ford Foundation
-    logo: /images/logos/fordfoundation.png
+    _image-logo: /images/logos/fordfoundation.png
   - name: World Bank
-    logo: /images/logos/worldbank.png
+    _image-logo: /images/logos/worldbank.png
   - name: International Water Management Institute,
-    logo: /images/logos/iwmi.png
+    _image-logo: /images/logos/iwmi.png
   - name: International Food Policy Research Institute
-    logo: /images/logos/ifpri.png
+    _image-logo: /images/logos/ifpri.png
   - name: United States Agency for International Development
-    logo: /images/logos/usaid.png
+    _image-logo: /images/logos/usaid.png
   - name: Asian Development Bank
-    logo: /images/logos/adb.png
+    _image-logo: /images/logos/adb.png
   - name: World Wildlife Fund
-    logo: /images/logos/wwf.png
+    _image-logo: /images/logos/wwf.png
   - name: CARE
-    logo: /images/logos/care.png
+    _image-logo: /images/logos/care.png
   - name: Oxfam-America
-    logo: /images/logos/oxfam.png
+    _image-logo: /images/logos/oxfam.png
   - name: United Nations Agencies
-    logo: /images/logos/un.png
+    _image-logo: /images/logos/un.png
 education:
   - name: Cornell University
-    logo: /images/logos/cornell.png
+    _image-logo: /images/logos/cornell.png
     description: 'Ph.D. Sociology of Development, Cornell University.<br />Minor Fields: Agricultural Economics, Southeast Asian Studies<br /><br />M.S. Sociology of Development, Cornell University.'
   - name: Beloit College
-    logo: /images/logos/beloit.png
+    _image-logo: /images/logos/beloit.png
     description: B.A. Major in Anthropology, Beloit College.
 fellowships:
   - name: Fulbright
-    logo: /images/logos/fulbright.png
+    _image-logo: /images/logos/fulbright.png
     description: Fulbright Research Award. Thailand. 1985-1986.
   - name: International Association for Public Participation
-    logo: /images/logos/iap2.png
+    _image-logo: /images/logos/iap2.png
     description: Certificate in Public Participation. International Association for Public Participation. 2003.
   - name: Indiana University Bloomington
-    logo: /images/logos/iu.png
+    _image-logo: /images/logos/iu.png
     description: Visiting Scholar, Workshop in Political Theory and Policy Analysis, Indiana University Bloomington. 2009-2010.
 memberships:
   - name: Ford Foundation
-    logo: /images/logos/fordfoundation.png
+    _image-logo: /images/logos/fordfoundation.png
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 publications:
   - title: 'Water Rights Reform: Lessons for Institutional Design'
@@ -114,7 +114,7 @@ layout: default
   <div class="text-center grid-middle-spaceAround">
     {% for clients in page.clients %}
     <div class="col-2_md-3_sm-4">
-      <img class="client-logos" src="{{clients.logo}}"/ alt="{{clients.name}} logo" />
+      <img class="client-logos" src="{{clients._image-logo}}"/ alt="{{clients.name}} logo" />
     </div>
     {% endfor %}
   </div>
@@ -122,7 +122,7 @@ layout: default
 <section class="bg-pale section-padding">
   <h2>Education</h2>
   {% for education in page.education %}
-  <img class="logos" src="{{education.logo}}"/ alt="{{education.name}} logo">
+  <img class="logos" src="{{education._image-logo}}"/ alt="{{education.name}} logo">
   <p>
     {{education.description}}
   </p>
@@ -131,7 +131,7 @@ layout: default
 <section class="section-padding">
   <h2>Training & Fellowships</h2>
   {% for fellowships in page.fellowships %}
-  <img class="logos" src="{{fellowships.logo}}"/ alt="{{fellowships.name}} logo">
+  <img class="logos" src="{{fellowships._image-logo}}"/ alt="{{fellowships.name}} logo">
   <p>
     {{fellowships.description}}
   </p>
@@ -140,7 +140,7 @@ layout: default
 <section class="bg-pale section-padding">
   <h2>Professional Memberships</h2>
   {% for memberships in page.memberships %}
-  <img class="logos" src="{{memberships.logo}}"/ alt="{{memberships.name}} logo">
+  <img class="logos" src="{{memberships._image-logo}}"/ alt="{{memberships.name}} logo">
   <p>
     {{memberships.description}}
   </p>
