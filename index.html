@@ -10,7 +10,7 @@ clients:
     image-logo: /images/logos/fordfoundation.png
   - name: World Bank
     image-logo: /images/logos/worldbank.png
-  - name: International Water Management Institute,
+  - name: 'International Water Management Institute,'
     image-logo: /images/logos/iwmi.png
   - name: International Food Policy Research Institute
     image-logo: /images/logos/ifpri.png
@@ -29,35 +29,50 @@ clients:
 education:
   - name: Cornell University
     image-logo: /images/logos/cornell.png
-    description: 'Ph.D. Sociology of Development, Cornell University.<br />Minor Fields: Agricultural Economics, Southeast Asian Studies<br /><br />M.S. Sociology of Development, Cornell University.'
+    description: >-
+      Ph.D. Sociology of Development, Cornell University.<br />Minor Fields:
+      Agricultural Economics, Southeast Asian Studies<br /><br />M.S. Sociology
+      of Development, Cornell University.
   - name: Beloit College
     image-logo: /images/logos/beloit.png
-    description: B.A. Major in Anthropology, Beloit College.
+    description: 'B.A. Major in Anthropology, Beloit College.'
 fellowships:
   - name: Fulbright
     image-logo: /images/logos/fulbright.png
     description: Fulbright Research Award. Thailand. 1985-1986.
   - name: International Association for Public Participation
     image-logo: /images/logos/iap2.png
-    description: Certificate in Public Participation. International Association for Public Participation. 2003.
+    description: >-
+      Certificate in Public Participation. International Association for Public
+      Participation. 2003.
   - name: Indiana University Bloomington
     image-logo: /images/logos/iu.png
-    description: Visiting Scholar, Workshop in Political Theory and Policy Analysis, Indiana University Bloomington. 2009-2010.
+    description: >-
+      Visiting Scholar, Workshop in Political Theory and Policy Analysis,
+      Indiana University Bloomington. 2009-2010.
 memberships:
   - name: Ford Foundation
     image-logo: /images/logos/fordfoundation.png
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+  - name: International Association for the Study of Commons
+    image-logo:
+    description:
 publications:
   - title: 'Water Rights Reform: Lessons for Institutional Design'
     description: >-
-      Edited by Bryan Bruns, Claudia Ringler, and Ruth Meinzen-Dick. Washington, D.C.: International Food Policy Research Institute. 2005.
+      Edited by Bryan Bruns, Claudia Ringler, and Ruth Meinzen-Dick. Washington,
+      D.C.: International Food Policy Research Institute. 2005.
     bookcover: /images/bookcovers/wwr_cover.png
   - title: Negotiating Water Rights.
     description: >-
-      Edited by Bryan Bruns and Ruth Meinzen-Dick. London: Intermediate Technology Publications. New Delhi: Vistaar. 2000.
+      Edited by Bryan Bruns and Ruth Meinzen-Dick. London: Intermediate
+      Technology Publications. New Delhi: Vistaar. 2000.
     bookcover: /images/bookcovers/nwr_cover.jpg
 layout: default
 ---
+
 <header class="grid-middle bg-solid hero-padding">
   <div class="col-6_md-12 pad-all-s">
     <h1>{{page.title}}</h1>
@@ -104,7 +119,7 @@ layout: default
   <p class="editable">
     I have professional experience setting up and managing projects in Thailand, Indonesia, Vietnam, Laos, Cambodia, Philippines, Bangladesh, Sri Lanka, Nepal, China, Tajikistan, Yemen, Egypt, Nigeria, Malawi, and Ghana.
   </p>
-  <img class="hide-mobile" src="/images/bryanbrunsmap.png" alt="world map"/>
+  <img class="hide-mobile" src="/images/bryanbrunsmap.png" alt="world map" />
 </section>
 <section class="section-padding">
   <h2>Clients</h2>
@@ -114,7 +129,7 @@ layout: default
   <div class="text-center grid-middle-spaceAround">
     {% for clients in page.clients %}
     <div class="col-2_md-3_sm-4">
-      <img class="client-logos" src="{{clients.image-logo}}"/ alt="{{clients.name}} logo" />
+      <img class="client-logos" src="{{clients.image-logo}}" alt="{{clients.name}} logo" />
     </div>
     {% endfor %}
   </div>
@@ -122,7 +137,7 @@ layout: default
 <section class="bg-pale section-padding">
   <h2>Education</h2>
   {% for education in page.education %}
-  <img class="logos" src="{{education.image-logo}}"/ alt="{{education.name}} logo">
+  <img class="logos" src="{{education.image-logo}}" alt="{{education.name}} logo" />
   <p>
     {{education.description}}
   </p>
@@ -131,7 +146,7 @@ layout: default
 <section class="section-padding">
   <h2>Training & Fellowships</h2>
   {% for fellowships in page.fellowships %}
-  <img class="logos" src="{{fellowships.image-logo}}"/ alt="{{fellowships.name}} logo">
+  <img class="logos" src="{{fellowships.image-logo}}" alt="{{fellowships.name}} logo" />
   <p>
     {{fellowships.description}}
   </p>
@@ -140,7 +155,7 @@ layout: default
 <section class="bg-pale section-padding">
   <h2>Professional Memberships</h2>
   {% for memberships in page.memberships %}
-  <img class="logos" src="{{memberships.image-logo}}"/ alt="{{memberships.name}} logo">
+  <img class="logos" src="{{memberships.image-logo}}" alt="{{memberships.name}} logo" />
   <p>
     {{memberships.description}}
   </p>
@@ -157,7 +172,7 @@ layout: default
       </p>
     </div>
     <div class="col-3_sm-12">
-      <img class="bookcover" src="{{publications.bookcover}}"/ alt="{{publications.title}} book cover">
+      <img class="bookcover" src="{{publications.bookcover}}" alt="{{publications.title}} book cover" />
     </div>
   </div>
   {% endfor %}
@@ -170,15 +185,15 @@ layout: default
     <input type="hidden" name="_language" value="en" />
       <div class="form-group col-12">
           <label class="form-label" for="name">Your Name</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required />
       </div>
       <div class="form-group col-12">
           <label class="form-label" for="email">Your Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required />
       </div>
       <div class="form-group col-12">
           <label class="form-label" for="subject">Subject</label>
-          <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3" />
       </div>
       <div class="form-group col-12">
           <label class="form-label" for="message">Message</label>
