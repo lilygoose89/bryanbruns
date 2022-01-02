@@ -9,56 +9,56 @@ cv: /bryanbruns-cv.pdf
 og_image: /images/bryanbrunsdotcompreview.png
 clients:
   - name: Ford Foundation
-    image-logo: /images/logos/fordfoundation.png
+    image_logo: /images/logos/fordfoundation.png
   - name: World Bank
-    image-logo: /images/logos/worldbank.png
+    image_logo: /images/logos/worldbank.png
   - name: 'International Water Management Institute,'
-    image-logo: /images/logos/iwmi.png
+    image_logo: /images/logos/iwmi.png
   - name: International Food Policy Research Institute
-    image-logo: /images/logos/ifpri.png
+    image_logo: /images/logos/ifpri.png
   - name: United States Agency for International Development
-    image-logo: /images/logos/usaid.png
+    image_logo: /images/logos/usaid.png
   - name: Asian Development Bank
-    image-logo: /images/logos/adb.png
+    image_logo: /images/logos/adb.png
   - name: World Wildlife Fund
-    image-logo: /images/logos/wwf.png
+    image_logo: /images/logos/wwf.png
   - name: CARE
-    image-logo: /images/logos/care.png
+    image_logo: /images/logos/care.png
   - name: Oxfam-America
-    image-logo: /images/logos/oxfam.png
+    image_logo: /images/logos/oxfam.png
   - name: United Nations Agencies
-    image-logo: /images/logos/un.png
+    image_logo: /images/logos/un.png
 education:
   - name: Cornell University
-    image-logo: /images/logos/cornell.png
+    image_logo: /images/logos/cornell.png
     description: >-
       Ph.D. Sociology of Development, Cornell University.<br />Minor Fields:
       Agricultural Economics, Southeast Asian Studies<br /><br />M.S. Sociology
       of Development, Cornell University.
   - name: Beloit College
-    image-logo: /images/logos/beloit.png
+    image_logo: /images/logos/beloit.png
     description: 'B.A. Major in Anthropology, Beloit College.'
 fellowships:
   - name: Fulbright
-    image-logo: /images/logos/fulbright.png
+    image_logo: /images/logos/fulbright.png
     description: Fulbright Research Award. Thailand. 1985-1986.
   - name: International Association for Public Participation
-    image-logo: /images/logos/iap2.png
+    image_logo: /images/logos/iap2.png
     description: >-
       Certificate in Public Participation. International Association for Public
       Participation. 2003.
   - name: Indiana University Bloomington
-    image-logo: /images/logos/iu.png
+    image_logo: /images/logos/iu.png
     description: >-
       Visiting Scholar, Ostrom Workshop in Political Theory and Policy Analysis,
       Indiana University Bloomington. 2009-2010.
 memberships:
   - name: International Association for the Study of Commons
-    image-logo: >-
+    image_logo: >-
       https://iasc-commons.org/wp-content/uploads/2019/09/IASC-Logo_Header-slate-blue-1024x167.png
     description:
   - name: Society for Applied Anthropology
-    image-logo: >-
+    image_logo: >-
       https://www.appliedanthro.org/application/files/cache/thumbnails/77aa161dcf5014ceb28140cae55880f6.png
     description: Fellow
 publications:
@@ -125,7 +125,7 @@ layout: default
   <div class="text-center grid-middle-spaceAround">
     {% for clients in page.clients %}
     <div class="col-2_md-3_sm-4">
-      <img class="client-logos" src="{{clients.image-logo}}" alt="{{clients.name}} logo" />
+      <img class="client-logos" src="{{clients.image_logo}}" alt="{{clients.name}} logo" />
     </div>
     {% endfor %}
   </div>
@@ -133,7 +133,7 @@ layout: default
 <section class="bg-pale section-padding">
   <h2>Education</h2>
   {% for education in page.education %}
-  <img class="logos" src="{{education.image-logo}}" alt="{{education.name}} logo" />
+  <img class="logos" src="{{education.image_logo}}" alt="{{education.name}} logo" />
   <p>
     {{education.description}}
   </p>
@@ -142,7 +142,7 @@ layout: default
 <section class="section-padding">
   <h2>Training & Fellowships</h2>
   {% for fellowships in page.fellowships %}
-  <img class="logos" src="{{fellowships.image-logo}}" alt="{{fellowships.name}} logo" />
+  <img class="logos" src="{{fellowships.image_logo}}" alt="{{fellowships.name}} logo" />
   <p>
     {{fellowships.description}}
   </p>
@@ -151,7 +151,7 @@ layout: default
 <section class="bg-pale section-padding">
   <h2>Professional Memberships</h2>
   {% for memberships in page.memberships %}
-  <img class="logos" src="{{memberships.image-logo}}" alt="{{memberships.name}} logo" />
+  <img class="logos" src="{{memberships.image_logo}}" alt="{{memberships.name}} logo" />
   <p>
     {{memberships.description}}
   </p>
